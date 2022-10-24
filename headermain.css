@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+/*헤더*/
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  height: 80px;
+  width: 100%;
+  padding: 0 80px;
+  z-index: 20;
+}
+.iconnav{
+    display: flex;
+    width: 105px;
+    height: 44px;
+}
+
+.material-symbols-rounded {
+  font-size: 40px;
+  font-weight: 200;
+  color:#000000;
+
+}
+
+.pagename {
+  font-size: 40px;
+  font-family: 'hamlet';
+  -webkit-text-stroke: 0.3px #fff;
+  color: transparent;
+  margin-left: -90px;
+}
+
+.header button {
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  outline: none;
+}
+.hamburger span {
+  display: inline-block;
+  height: 2px;
+  width: 30px;
+  border-radius: 2px;
+  background-color: #06DA0D;
+  margin-bottom: 10px;
+  transition: 0.3s ease transform;
+}
+.hamburger__open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.hamburger__open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger__open span:nth-child(3) {
+    transform: rotate(45deg) translate(-11px, -8px);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    height: 0%;
+    width: 100%;
+    background-color: #000000;
+    z-index: 9;
+}
+.navbackground {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color:#10c916;
+
+    z-index: 2;
+}
+.nav__content {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    height: 100%;
+    min-height: 100vh;
+    padding: 120px 0;
+    margin: 0 auto;
+    color: #f1f5f9;
+}
+.nav__left {
+    flex: 1;
+}
+.nav__right {
+    max-width: 300px;
+}
+.nav__links {
+    font-size: 80px;
+    font-family: "Ageo Bold";
+    line-height: 1;
+    margin-bottom: 80px;
+}
+.nav__links a {
+    display: block;
+}
+.nav__links a:not(:last-child) {
+    margin-bottom: 32px;
+}
+.nav__links a:hover {
+    color: #8decd0;
+}
+.nav__text h3 {
+    font-family: "Ageo Bold";
+}
+.nav__locations {
+    display: flex;
+    align-items: center;
+}
+.nav__locations p:not(:last-child) {
+margin-right: 24px;
+}
+.nav__locations p:not(:first-child) {
+text-decoration: underline;
+}
+.nav__locations :first-child {
+font-family: "Ageo Bold";
+}

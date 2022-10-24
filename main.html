@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>요즘어휘력_시작</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="header.css">
+ <style>
+    body {
+      background-color: #000000;
+      background-image: url('background.jpg') ;
+      background-size: 100%;
+      -ms-overflow-style: none;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    /*메인페이지 시작*/
+    .mainbox {
+      margin: auto;
+      margin-top: 110px;
+      width: 80%;
+      height: 500px;
+      border: 3px solid #06DA0D;
+      border-radius: 110px; 
+    }
+    .maintext {
+      margin: auto;
+      position: relative;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      font-size: 85px;
+      font-family: 'hamlet';
+      line-height: 160px;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+    }
+
+    .maintext  {
+      cursor: pointer;
+      -webkit-text-stroke-color: #06DA0D;
+      -webkit-text-stroke-width: 0.7px;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-repeat: no-repeat;
+      -webkit-transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+      transition: background-size 0.5s cㅗㅗubic-bezier(0.67, 0.01, 0.15, 0.98);
+    }
+    .maintext {
+      background-image: radial-gradient(circle farthest-corner at center center, #06DA0D 0%, #06DA0D 50%, transparent 50.1%);
+      background-position: 50% 50%;
+      background-size: 180% 400%;
+    }
+    .maintext:hover {
+      background-size: 0% 0%;
+    }
+    .mainicon button {
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+    }
+    .slide{
+      margin-top: 260px;
+      margin-left: 570px;
+
+    }
+
+    .material-symbols-rounded{
+      font-size: 88px;
+      font-weight: 300;
+      color : #ffffff;
+    }
+  
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("#site").click(function(){ 
+            $("#url").slideDown("slow"); 
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="mainbox">
+      <span class="maintext">요즘 어휘력</span>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+      <div class="slide">
+        <span id="btn-down" class="material-symbols-rounded">expand_more</span>
+      </div>   
+        
+    </div>
+</body>
+</html>
